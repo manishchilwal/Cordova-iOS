@@ -1,0 +1,27 @@
+Project creation:
+cordova create MyApp com.example.myapp MyApp
+cd MyApp
+
+
+Add iOS Platform:
+cordova platform add ios
+
+
+Add pages:
+Navigate to www folder and in index.html make changes
+
+
+Build from root:
+cordova build ios
+
+
+
+CleverTap Integration:
+cordova plugin add clevertap-cordova --variable CLEVERTAP_ACCOUNT_ID="R5K-486-ZW7Z" --variable CLEVERTAP_TOKEN="6b4-352"
+
+
+In config.xml add 
+<plugin name="clevertap-cordova" source="npm">
+        <param name="CLEVERTAP_ACCOUNT_ID" value="R5K-486-ZW7Z" />
+        <param name="CLEVERTAP_TOKEN" value="6b4-352" />
+</plugin>
